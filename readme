@@ -1,0 +1,4 @@
+npm uninstall bufferutil socket.io-client utf-8-validate -S
+npm uninstall socket.io-client -S
+npm uninstall utf-8-validate -S
+browserify --node -e test.js -o t.js

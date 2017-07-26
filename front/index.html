@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ch">
+    <head>
+        <script src="lib/jquery-2.1.4.min.js"></script>        
+        <script src="lib/vue.min.js"></script>
+	    <script src="lib/vue-resource.min.js"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <button onclick="test()">cpp调用测试</button><br>
+        <button onclick="reg_evt()">注册c++事件</button><br>
+        <button onclick="unreg_evt()">反注册c++事件</button><br>
+        <ol>
+            <li v-for="log in logs">
+            {{ log }}
+            </li>
+        </ol>
+        <script src="js/index.js"></script>
+    </body>
+</html>

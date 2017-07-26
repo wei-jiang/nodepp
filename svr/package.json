@@ -1,0 +1,36 @@
+{
+  "name": "cpp_addon",
+  "version": "0.0.1",
+  "main": "main.html",
+  "chromium-args": "--disable-web-security --proxy-bypass-list=127.0.0.1  --kiosk-printing=true",
+  "js-flags": "--harmony",
+  "node-remote": "*://*/*",
+  "window": {
+    "icon": "fg_32.png",
+    "title": "nwjs C++插件测试",
+    "frame": true,
+    "show": true,
+    "kiosk": false,
+    "fullscreen": false,
+    "width": 800,
+    "height": 500,
+    "transparent": false,
+    "always-on-top": false,
+    "position": "center"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "hat": "0.0.3",
+    "iconv-lite": "^0.4.13",
+    "serialport": "^4.0.6",
+    "serve-favicon": "^2.3.0",
+    "socket.io": "^1.5.1",
+    "socket.io-client": "^2.0.3",
+    "underscore": "^1.8.3",
+    "winston": "^2.3.0",
+    "winston-daily-rotate-file": "^1.3.1"
+  },
+  "devDependencies": {}
+}
